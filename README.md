@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Model Space
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Model Space** is an innovative platform designed to provide users with a seamless way to interact with generative AI models. This web application offers a user-friendly interface where various data types—including text, numbers, images, and audio—can be input. The AI models then process these inputs and generate outputs in diverse formats such as text, images, numbers, booleans, and audio.
 
 ## Available Scripts
 
@@ -14,33 +14,27 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Model Overview**: Upon landing on the platform, users are presented with a series of cards, each representing a different AI model. These cards are dynamically generated using data fetched from an API.
 
-### `npm run build`
+- **Detailed Model Interaction**: By clicking on any specific card, users are redirected to a new page that showcases detailed information about the selected model. The page URL includes the model's unique ID, which is used to instantly fetch the model's details via an API call.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Dynamic Form Generation**: The detailed model page features a custom form that is dynamically generated based on the input fields provided by the model's detail API. This form leverages Ant Design components to ensure a polished user experience, setting default values and enforcing required fields.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Prediction and Output**: Users can fill out the form and click on the 'Predict' button, which triggers a backend API call. The response from this call is then displayed below the form, offering the generated output—be it text, images, or other formats.
 
-### `npm run eject`
+- **Responsive Design**: The entire application is built to be fully responsive, ensuring that users have a smooth experience across all devices.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Technologies Used
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React + TypeScript**: For building a robust and scalable frontend.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Ant Design (antd)**: To create a consistent and intuitive user interface.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **CSS**: For custom styling and responsive design.
 
-## Learn More
+- **React Router DOM**: For efficient routing and navigation within the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
