@@ -1,8 +1,9 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://frontend-assignment-api.misc.simplismart.ai';
+const API_BASE_URL = process.env.REACT_APP_MODEL_SPACE_API_BASE_URL;
 
 export const getModelSpaces = async () => {
+  console.log('API_BASE_URL', API_BASE_URL);
   return axios.get(`${API_BASE_URL}/model-spaces`);
 };
 
