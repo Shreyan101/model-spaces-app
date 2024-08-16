@@ -2,6 +2,8 @@
 
 **Model Space** is an innovative platform designed to provide users with a seamless way to interact with generative AI models. This web application offers a user-friendly interface where various data types—including text, numbers, images, and audio—can be input. The AI models then process these inputs and generate outputs in diverse formats such as text, images, numbers, booleans, and audio.
 
+Open [https://model-space.netlify.app/) to view it in the browser.
+
 ## Available Scripts
 
 In the project directory, you can run:
